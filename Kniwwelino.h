@@ -14,6 +14,7 @@
 #define Kniwwelino_h
 
 #include "Arduino.h"
+#include "arduino_secrets.h"
 
 #include "KniwwelinoIcons.h"
 #include "KniwwelinoTones.h"
@@ -117,15 +118,22 @@
 #define FILE_FORCED_WIFI "/forcwifi.conf"
 #define FILE_CONF "/conf.json"
 
-#define DEF_UPDATESERVER		"broker.kniwwelino.lu"
-#define DEF_MQTTSERVER		 	"broker.kniwwelino.lu"
-#define DEF_MQTTPORT			1883
-#define DEF_MQTTUSER			"kniwwelino"
-#define DEF_MQTTPW		        "esp8266"
-#define DEF_MQTTPUBLICDELAY		300
-#define DEF_MQTTBASETOPIC		"kniwwelino/"
+// #define DEF_UPDATESERVER		"broker.kniwwelino.lu"
+// #define DEF_MQTTSERVER		 	"broker.kniwwelino.lu"
+// #define DEF_MQTTPORT			1883
+// #define DEF_MQTTUSER			"kniwwelino"
+// #define DEF_MQTTPW		        "esp8266"
+// #define DEF_MQTTPUBLICDELAY		300
+// #define DEF_MQTTBASETOPIC		"kniwwelino/"
 #define DEF_FWUPDATEURL      	"/updateFW"
 #define DEF_CONFUPDATEURL       "/updateConf"
+
+#define DEF_UPDATESERVER		"connect.nustem.uk"
+#define DEF_MQTTSERVER		 	"connect.nustem.uk"
+#define DEF_MQTTPORT			1883
+#define DEF_MQTTPUBLICDELAY		300
+#define DEF_MQTTBASETOPIC		"test/"
+// DEF_MQTTUSER & DEF_MQTTPW in arduino_secrets.h file, which is .gitignored.
 
 #define MQTT_RGB 			  	"RGB"
 #define MQTT_RGBCOLOR         	"RGB/COLOR"
